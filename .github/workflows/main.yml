@@ -10,7 +10,7 @@ jobs:
     build-publish-python:
         runs-on: ubuntu-latest
         env:
-          DOCKER_REPO: 'meg-docker-local'
+          DOCKER_REPO: 'docker-prod-local-docker-local'
           IMAGE_NAME: 'python-test-image-gh'
         outputs:
           image: ${{ vars.JF_URL }}/${{ env.DOCKER_REPO }}/${{ env.IMAGE_NAME }}
