@@ -102,4 +102,4 @@ jobs:
         private-repository: true
       secrets:
         registry-username: ${{ vars.JF_USER }}
-        registry-password: ${{ secrets.JF_ACCESS_TOKEN }}
+        #registry-password: ${{ secrets.JF_ACCESS_TOKEN }}
