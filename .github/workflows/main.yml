@@ -99,7 +99,7 @@ jobs:
       with:
         image:  ${{ needs.build-publish-python.outputs.image }}
         digest: ${{ needs.build-publish-python.outputs.digest }}
-        private-repository: true
+        private-repository: false
       secrets:
         registry-username: ${{ vars.JF_USER }}
         #registry-password: ${{ secrets.JF_ACCESS_TOKEN }}
